@@ -9,8 +9,8 @@ namespace Tool_DB_TableCol_Compare
     {
         static void Main(string[] args)
         {
-            string connectionStringA = "Data Source=127.0.0.1;Initial Catalog=DB_Test1;Integrated Security=True";
-            string connectionStringB = "Data Source=127.0.0.2;Initial Catalog=DB_Test2;Integrated Security=True";
+            string connectionStringA = "Data Source=127.0.0.1;Initial Catalog=DB_Test1;Integrated Security=True;Encrypt=False";
+            string connectionStringB = "Data Source=127.0.0.2;Initial Catalog=DB_Test2;Integrated Security=True;Encrypt=False";
 
             using (var connectionA = new SqlConnection(connectionStringA))
             using (var connectionB = new SqlConnection(connectionStringB))
